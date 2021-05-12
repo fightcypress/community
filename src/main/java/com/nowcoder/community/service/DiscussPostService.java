@@ -45,4 +45,12 @@ public class DiscussPostService {
 
         return discussPostMapper.insertDiscussPost(post);
     }
+
+    public DiscussPost findDiscussPostById(int id){
+        return discussPostMapper.selectDiscussPostById(id);
+    }
+
+    public int updateCommentCount(int id, int commentCount) {
+        return discussPostMapper.updateCommentCount(id, commentCount);
+    }
 }
