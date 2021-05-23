@@ -15,7 +15,7 @@ public interface DiscussPostMapper {
      * @param limit 每页多少条数据
      * @return
      */
-    List<DiscussPost> selectDiscussPosts(int userId,int offset,int limit);
+    List<DiscussPost> selectDiscussPosts(int userId,int offset,int limit, int orderMode);
 
     /**
      *
